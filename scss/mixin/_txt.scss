@@ -1,0 +1,16 @@
+.title {
+    font-size: 1.725rem;
+    font-weight: 800;
+}
+
+.txt {
+    &--ss {
+        font-size: 0.75rem;
+    }
+    &--s {
+        font-size: 0.875rem;
+    }
+    &--m {
+        font-size: 1rem;
+    }
+}

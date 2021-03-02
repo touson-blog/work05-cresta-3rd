@@ -1,17 +1,21 @@
 //ブレイクポイント
-$breakPointList: 767px, 768px;
-
-//メディアクエリ
-$mq: (
-    "sp": "screen and (max-width: #{nth($breakPointList, 1)})",
-    "pc": "print,screen and (min-width: #{nth($breakPointList, 2)})",
+$breakPointList: (
+    "sp": "screen and (min-width: 376px)",
+    "tb": "screen and (min-width: 769px)",
+    "pc": "screen and (min-width: 1025px)",
 ) !default;
+
+// //メディアクエリ
+// $mq: (
+//     "tb": "print,screen and (min-width: #{nth($breakPointList, 1)})",
+//     "pc": "print,screen and (min-width: #{nth($breakPointList, 2)})",
+// ) !default;
 
 //画像格納ディレクトリ
 $imgDir: "/images/";
 
 //PCレイアウト時の最小横幅
-// $minPcContentWidth: 1000px;
+$minPcContentWidth: 1100px;
 
 //サイトで使用するカラー
 // $colors: #027744, #e43d60;

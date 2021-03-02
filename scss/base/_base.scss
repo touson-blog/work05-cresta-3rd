@@ -1,6 +1,11 @@
 body {
-    color: #000; //基本文字色
-    font-family: Montserrat, sans-serif; //フォントタイプ
+    color: #333333; //基本文字色
+    font-family: "Montserrat", "YuGothic", sans-serif; //フォントタイプ
+}
+
+img {
+    vertical-align: bottom;
+    width: 100%;
 }
 //SP
 @media screen and (max-width: #{nth($breakPointList, 1)}) {

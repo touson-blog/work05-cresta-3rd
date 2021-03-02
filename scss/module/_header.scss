@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    padding: 19.8px 4vw 0;
+    width: 100%;
+    z-index: 10;
+    &__inner {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.burger-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.9rem;
+    &__bar {
+        padding-right: 7px;
+    }
+    &__menu {
+        font-size: 0.6rem;
+    }
+}
+
+.bar {
+    display: block;
+    background-color: #fff;
+    height: 2px;
+    width: 22px;
+    border-radius: 1px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    display: block;
+    &__img {
+        width: 189px;
+    }
+}

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -13,19 +15,21 @@
 <body>
     <header class="header">
         <section class="header__inner">
-            <section class="logo header__logo">
-                <h1><a href="#"><img src="/images/site-logo@2x-min.png" alt=""></a></h1>
+            <section class="logo">
+                <h1><a href="#"><img class="logo__img" src="/images/site-logo@2x-min.png" alt=""></a></h1>
             </section>
             <!-- /.logo header_logo -->
             <button class="burger-btn header__burger-btn">
-                <span class="bar bar-top"></span>
-                <span class="bar bar-mid"></span>
-                <span class="bar bar-bot"></span>
-                <p>MENU</p>
+                <div class="burger-btn__bar">
+                    <span class="bar bar-top"></span>
+                    <span class="bar bar-mid"></span>
+                    <span class="bar bar-bot"></span>
+                </div>
+                <p class="menu burger-btn__menu">MENU</p>
             </button>
-            <nav class="menu header__menu">
+            <nav class="menu header__menu display-none">
                 <section class="logo">
-                    <h1><a href="#"><img src="images/site-logo-symbol@2x-min.png" alt=""></a></h1>
+                    <h1><a href="#"><img class="menu__logo" src="images/site-logo-symbol@2x-min.png" alt=""></a></h1>
                 </section>
                 <ul class="nav-lists">
                     <li class="nav-item"><a href="#">ABOUT US</a></li>
@@ -40,45 +44,58 @@
     </header>
 
     <main class="main">
-        <section class="fv main__fv">
-            <p class="fv__img"><img src="images/the-honest-company-uM-WXMr0YXc-unsplash@2x-min.png" alt=""></p>
-            <p class="fv__img-sub"><img src="images/bg_kv@2x.png" alt=""></p>
-            <p class="fv__title">デザインで人を笑顔にする会社</p>
-            <p class="fv__company">DIGSMILE INC.</p>
-            <p class="fv__concept">DESIGN<br>FOR<br>SMILE.</p>
-        </section>
-        <!-- /.fv main__fv -->
-        <section class="section-wrapper main__about bg-about">
-            <div class="content-wrapper section-wrapper__about">
-                <p class="title">ABOUT US</p>
-                <p class="txt">DIGSMILEは、デザインで人を笑顔にする会社。
-                    なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。
-                    DIGSMILEの社名にはそんな想いが込められています。</p>
-                <button class="btn about__btn btn-left">READ MORE</button>
+        <section class="fv">
+            <p><img class="fv__img-main" src="images/the-honest-company-uM-WXMr0YXc-unsplash@2x-min.png" alt=""></p>
+            <p><img class="fv__img-sub" src="images/bg_kv@2x.png" alt=""></p>
+            <div class="fv__contents">
+                <h2 class="fv__title">デザインで人を笑顔にする会社</h2>
+                <p class="fv__company">DIGSMILE INC.</p>
+                <p class="fv__concept">DESIGN<br>FOR<br>SMILE.</p>
             </div>
         </section>
+        <!-- /.fv main__fv -->
+        <section class="page-about bg-about">
+            <div class="content-about">
+                <h2 class="title content-aboout__title">ABOUT US</h2>
+                <p class="txt txt--s content-about__txt">DIGSMILEは、デザインで人を笑顔にする会社。<br>
+                    なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>
+                    DIGSMILEの社名にはそんな想いが込められています。</p>
+                <a class="btn content-about__btn btn-left" href="#">READ MORE</a>
+            </div>
+        </section>
+        <!-- /.page_about bg-about -->
 
-        <section class="section-wrapper main__cards bg-cards">
-            <div class="content-wrapper section-wrapper__cards">
-                <div class="sub-content-wrapper">
-                    <p class="title">WORKS</p>
-                    <p class="img-works"><img src="images/workplace-1245776_1920@2x-min.png" alt=""></p>
-                    <p class="txt">DIGSMILEの制作実績を紹介します。</p>
-                    <button class="btn works__btn">READ MORE</button>
+        <section class="page-cards page-cards--col2 bg-cards">
+            <div class="page-cards__item card">
+                <div class="card__body">
+                    <h2 class="title card__title">WORKS</h2>
+                    <figure class="card__img-wrapper">
+                        <img src="images/daria-shevtsova-k_RYBedEvDw-unsplash@2x-min.png" alt="" class="card__img">
+                    </figure>
+                    <p class="txt txt--m card__text">
+                        DIGSMILEの制作実績を紹介します。
+                    </p>
+                    <a class="btn card__btn btn-left" href="#">READ MORE</a>
                 </div>
-                <div class="sub-content-wrapper">
-                    <p class="title">CULTURE</p>
-                    <p class="img-works"><img src="images/culture-img@2x-min.png" alt=""></p>
-                    <p class="txt">DIGSMILEの社内文化について紹介します。</p>
-                    <button class="btn works__btn btn-left">READ MORE</button>
+            </div>
+            <div class="page-cards__item card">
+                <div class="card__body">
+                    <h2 class="title card__title">CULTURE</h2>
+                    <figure class="card__img-wrapper">
+                        <img src="images/culture-img@2x-min.png" alt="" class="card__img">
+                    </figure>
+                    <p class="txt txt--m card__text">
+                        DIGSMILEの社内文化について紹介します。
+                    </p>
+                    <a class="btn card__btn btn-left" href="#">READ MORE</a>
                 </div>
             </div>
         </section>
         <!-- /.section-wrapper main__cards bg-cards -->
 
-        <section class="section-wrapper main__topics">
+        <section class="page-topics">
             <div class="content-wrapper">
-                <p class="title">LATEST TOPICS</p>
+                <h2 class="title">LATEST TOPICS</h2>
                 <div class="topics-contents">
                     <div class="topics-content">
                         <p class="date">2020.02.01</p>
@@ -94,11 +111,22 @@
                     </div>
                 </div>
                 <!-- /.topics-contents -->
-                <button class="btn works__btn btn-left">READ MORE</button>
+                <a class="btn works__btn btn-left" href="#">READ MORE</a>
             </div>
             <!-- /.content-wrapper -->
         </section>
         <!-- /.section-wrapper main__topics -->
+
+        <section class="section-wrapper main__contact">
+            <div class="content-wrapper">
+                <p class="img-contact"><img src="/images/tiago-rosado-cMG5qjpnsyg-unsplash@2x-min.png" alt=""></p>
+                <h2 class="title">CONTACT</h2>
+                <p class="txt">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。
+                    まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+                <a class="btn works__btn btn-left" href="#">READ MORE</a>
+            </div>
+            <!-- /.content-wrapper -->
+        </section>
     </main>
 
     <footer class="footer">
