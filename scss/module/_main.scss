@@ -59,6 +59,7 @@
 }
 
 .page-about {
+    z-index: 10;
     max-width: 1100px;
     padding: 50px 15px;
     @include mq(tb) {
@@ -68,6 +69,7 @@
     @include mq(tb) {
         margin: 120px auto 0;
     }
+    position: relative;
     .content-about {
         background-color: white;
         padding: 50px 30px;
@@ -94,13 +96,34 @@
 }
 
 .page-cards {
+    z-index: 5;
+    @include mq(tb) {
+        position: relative;
+        top: -100px;
+    }
     padding: 40px 15px;
+    @include mq(tb) {
+        padding: 175px 15px 60px;
+    }
     display: flex;
     flex-wrap: wrap;
-    &--col2 {
+    @include mq(tb) {
+        justify-content: center;
+    }
+    width: 100%;
+    &--col2 > &__item {
         width: 100%;
         @include mq(tb) {
-            width: 50%;
+            width: 45%;
+        }
+    }
+    &__item {
+        max-width: 520px;
+        @include mq(tb) {
+            margin-right: 60px;
+            &:last-child {
+                margin-right: 0;
+            }    
         }
     }
 }
@@ -132,4 +155,12 @@
     &__btn {
         margin-top: 28px;
     }
+}
+
+.page-topics {
+    @include mq(tb) {
+        position: relative;
+        top: -100px;
+    }
+    padding: 37px 15px 40px;
 }

@@ -655,9 +655,11 @@ template {
 }
 
 .page-about {
+  z-index: 10;
   max-width: 1100px;
   padding: 50px 15px;
   margin: 80px auto 0;
+  position: relative;
 }
 
 @media screen and (min-width: 769px) {
@@ -702,6 +704,7 @@ template {
 }
 
 .page-cards {
+  z-index: 5;
   padding: 40px 15px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -710,15 +713,51 @@ template {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-}
-
-.page-cards--col2 {
   width: 100%;
 }
 
 @media screen and (min-width: 769px) {
-  .page-cards--col2 {
-    width: 50%;
+  .page-cards {
+    position: relative;
+    top: -100px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .page-cards {
+    padding: 175px 15px 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .page-cards {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.page-cards--col2 > .page-cards__item {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .page-cards--col2 > .page-cards__item {
+    width: 45%;
+  }
+}
+
+.page-cards__item {
+  max-width: 520px;
+}
+
+@media screen and (min-width: 769px) {
+  .page-cards__item {
+    margin-right: 60px;
+  }
+  .page-cards__item:last-child {
+    margin-right: 0;
   }
 }
 
@@ -748,4 +787,15 @@ template {
 
 .card__btn {
   margin-top: 28px;
+}
+
+.page-topics {
+  padding: 37px 15px 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .page-topics {
+    position: relative;
+    top: -100px;
+  }
 }
