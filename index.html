@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
         integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
@@ -21,26 +20,31 @@
             <!-- /.logo header_logo -->
             <button class="burger-btn header__burger-btn">
                 <div class="burger-btn__bar">
-                    <span class="bar bar-top"></span>
-                    <span class="bar bar-mid"></span>
-                    <span class="bar bar-bot"></span>
+                    <span class="bar bar__top"></span>
+                    <span class="bar bar__mid"></span>
+                    <span class="bar bar__bot"></span>
                 </div>
                 <p class="menu burger-btn__menu">MENU</p>
             </button>
-            <nav class="menu header__menu display-none">
-                <section class="logo">
-                    <h1><a href="#"><img class="menu__logo" src="images/site-logo-symbol@2x-min.png" alt=""></a></h1>
-                </section>
-                <ul class="nav-lists">
-                    <li class="nav-item"><a href="#">ABOUT US</a></li>
-                    <li class="nav-item"><a href="#">WORKS</a></li>
-                    <li class="nav-item"><a href="#">CULTURE</a></li>
-                    <li class="nav-item"><a href="#">TOPICS</a></li>
-                    <li class="nav-item"><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
         </section>
         <!-- /.header__inner -->
+        <nav class="header__burger">
+            <div class="burger-bg"></div>
+            <section class="burger-wrapper">
+                <section class="burger-menu">
+                    <div class="logo-mark">
+                        <h1><a href="#"><img class="logo-mark__img" src="images/site-logo-symbol@2x-min.png" alt=""></a></h1>
+                    </div>
+                    <ul class="nav-lists">
+                        <li class="nav-item"><a href="#">ABOUT US</a></li>
+                        <li class="nav-item"><a href="#">WORKS</a></li>
+                        <li class="nav-item"><a href="#">CULTURE</a></li>
+                        <li class="nav-item"><a href="#">TOPICS</a></li>
+                        <li class="nav-item"><a href="#">CONTACT</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
     </header>
 
     <main class="main">
@@ -54,6 +58,7 @@
             </div>
         </section>
         <!-- /.fv main__fv -->
+
         <section class="page-about bg-about">
             <div class="content-about">
                 <h2 class="title content-aboout__title">ABOUT US</h2>
@@ -94,8 +99,8 @@
         <!-- /.section-wrapper main__cards bg-cards -->
 
         <section class="page-topics">
-            <div class="content-wrapper">
-                <h2 class="title">LATEST TOPICS</h2>
+            <div class="content-topics">
+                <h2 class="title content-topics__title">LATEST TOPICS</h2>
                 <div class="topics-contents">
                     <div class="topics-content">
                         <p class="txt txt--ss topics-content__date">2020.02.01</p>
@@ -111,27 +116,34 @@
                     </div>
                 </div>
                 <!-- /.topics-contents -->
-                <a class="btn works__btn btn-left" href="#">READ MORE</a>
+                <div class="topics-btn">
+                    <a class="btn content-topics__btn" href="#">READ MORE</a>
+                </div>
+                <!-- /.topics-btn -->
             </div>
             <!-- /.content-wrapper -->
         </section>
         <!-- /.section-wrapper main__topics -->
 
-        <section class="section-wrapper main__contact">
-            <div class="content-wrapper">
-                <p class="img-contact"><img src="/images/tiago-rosado-cMG5qjpnsyg-unsplash@2x-min.png" alt=""></p>
-                <h2 class="title">CONTACT</h2>
-                <p class="txt">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。
-                    まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
-                <a class="btn works__btn btn-left" href="#">READ MORE</a>
+        <section class="page-contact">
+            <div class="contact-contents">
+                <p class="img-wrapper"><img class="page-contact__img"
+                        src="/images/tiago-rosado-cMG5qjpnsyg-unsplash@2x-min.png" alt=""></p>
+                <div class="contact-content">
+                    <h2 class="title contact-content__title">CONTACT</h2>
+                    <p class="txt contact-content__text">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。
+                        まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+                    <a class="btn contact-content__btn" href="#">READ MORE</a>
+                </div>
+                <!-- /.contact-content -->
             </div>
             <!-- /.content-wrapper -->
         </section>
     </main>
 
     <footer class="footer">
-        <section class="footer-inner footer__bg-gray">
-            <small class="footer-copyright">
+        <section class="footer__inner">
+            <small class="footer__copyright">
                 ©2018 DIGSMILE INC.
             </small>
             <!-- /.footer-copyright -->
@@ -139,6 +151,7 @@
         <!-- /.footer-inner -->
     </footer>
 
+    <script type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>

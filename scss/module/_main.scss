@@ -60,6 +60,8 @@
 
 .page-about {
     z-index: 10;
+    position: relative;
+    top: 100px;
     max-width: 1100px;
     padding: 50px 15px;
     @include mq(tb) {
@@ -67,9 +69,8 @@
     }
     margin: 80px auto 0;
     @include mq(tb) {
-        margin: 120px auto 0;
+        margin: 20px auto 0;
     }
-    position: relative;
     .content-about {
         background-color: white;
         padding: 50px 30px;
@@ -97,10 +98,6 @@
 
 .page-cards {
     z-index: 5;
-    @include mq(tb) {
-        position: relative;
-        top: -100px;
-    }
     padding: 40px 15px;
     @include mq(tb) {
         padding: 175px 15px 60px;
@@ -123,7 +120,7 @@
             margin-right: 60px;
             &:last-child {
                 margin-right: 0;
-            }    
+            }
         }
     }
 }
@@ -158,9 +155,80 @@
 }
 
 .page-topics {
+    padding: 37px 5vw 40px;
     @include mq(tb) {
-        position: relative;
-        top: -100px;
+        padding: 57px 5vw 60px;
     }
-    padding: 37px 15px 40px;
+}
+
+.content-topics {
+    max-width: 1100px;
+    margin: 0 auto;
+    &__btn {
+        margin-top: 30px;
+    }
+}
+
+.topics-contents {
+    margin-top: 29px;
+    margin-left: auto;
+    max-width: 700px;
+}
+
+.topics-content {
+    margin-top: 17px;
+    border-bottom: 1px solid #dddddddd;
+    font-weight: bold;
+    &__date {
+        color: #CECECE;
+    }
+    &__title {
+        padding: 8px 0;
+    }
+}
+
+.topics-btn {
+    @include mq(tb) {
+        text-align: right;
+    }
+}
+
+.page-contact {
+    background-color: #f2f2f2;
+    padding: 40px 4vw;
+    &__img {
+        max-width: 520px;
+    }
+}
+
+.contact-contents {
+    margin-bottom: 40px;
+    @include mq(sp) {
+        margin-bottom: 80px;
+    }
+    @include mq(tb) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 60px auto 120px;
+    }
+}
+
+.contact-content {
+    margin-right: 80px;
+    &__title {
+        margin-top: 27px;
+        @include mq(tb) {
+            margin-top: 4vh;
+        }
+    }
+    &__text {
+        margin-top: 30px;
+        max-width: 440px;
+        @include mq(tb) {
+            line-height: 2rem;
+        }
+    }
+    &__btn {
+        margin-top: 30px;
+    }
 }

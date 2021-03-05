@@ -525,6 +525,16 @@ template {
   display: none;
 }
 
+.footer__inner {
+  background-color: #525252;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: white;
+  line-height: 50px;
+}
+
 .header {
   position: fixed;
   padding: 19.8px 4vw 0;
@@ -548,6 +558,39 @@ template {
           align-items: center;
 }
 
+.header__burger {
+  display: none;
+}
+
+.burger-bg {
+  background-color: #222222;
+  opacity: 0.5;
+  z-index: 20;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.burger-wrapper {
+  max-width: 520px;
+  width: 35vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  text-align: center;
+  background-color: #222222;
+  opacity: 0.8;
+  color: white;
+}
+
+.burger-wrapper__img {
+  width: 10px;
+}
+
 .burger-btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -562,6 +605,7 @@ template {
       -ms-flex-align: center;
           align-items: center;
   line-height: 0.9rem;
+  z-index: 40;
 }
 
 .burger-btn__bar {
@@ -570,6 +614,10 @@ template {
 
 .burger-btn__menu {
   font-size: 0.6rem;
+}
+
+.burger-menu {
+  margin-top: 180px;
 }
 
 .bar {
@@ -581,12 +629,47 @@ template {
   margin-bottom: 5px;
 }
 
+.cross .bar__top {
+  top: 0%;
+  left: -100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.cross .bar__mid {
+  display: none;
+}
+
+.cross .bar__bot {
+  top: 50%;
+  left: -100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .logo {
   display: block;
 }
 
 .logo__img {
   width: 189px;
+}
+
+.logo-mark__img {
+  width: 50px;
+}
+
+.nav-item {
+  margin-top: 27px;
+  font-size: 1.25rem;
+}
+
+.nav-item:first-child {
+  margin-top: 37px;
 }
 
 .btn {
@@ -656,10 +739,11 @@ template {
 
 .page-about {
   z-index: 10;
+  position: relative;
+  top: 100px;
   max-width: 1100px;
   padding: 50px 15px;
   margin: 80px auto 0;
-  position: relative;
 }
 
 @media screen and (min-width: 769px) {
@@ -670,7 +754,7 @@ template {
 
 @media screen and (min-width: 769px) {
   .page-about {
-    margin: 120px auto 0;
+    margin: 20px auto 0;
   }
 }
 
@@ -714,13 +798,6 @@ template {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   width: 100%;
-}
-
-@media screen and (min-width: 769px) {
-  .page-cards {
-    position: relative;
-    top: -100px;
-  }
 }
 
 @media screen and (min-width: 769px) {
@@ -790,12 +867,109 @@ template {
 }
 
 .page-topics {
-  padding: 37px 15px 40px;
+  padding: 37px 5vw 40px;
 }
 
 @media screen and (min-width: 769px) {
   .page-topics {
-    position: relative;
-    top: -100px;
+    padding: 57px 5vw 60px;
   }
+}
+
+.content-topics {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.content-topics__btn {
+  margin-top: 30px;
+}
+
+.topics-contents {
+  margin-top: 29px;
+  margin-left: auto;
+  max-width: 700px;
+}
+
+.topics-content {
+  margin-top: 17px;
+  border-bottom: 1px solid #dddddddd;
+  font-weight: bold;
+}
+
+.topics-content__date {
+  color: #CECECE;
+}
+
+.topics-content__title {
+  padding: 8px 0;
+}
+
+@media screen and (min-width: 769px) {
+  .topics-btn {
+    text-align: right;
+  }
+}
+
+.page-contact {
+  background-color: #f2f2f2;
+  padding: 40px 4vw;
+}
+
+.page-contact__img {
+  max-width: 520px;
+}
+
+.contact-contents {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 376px) {
+  .contact-contents {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .contact-contents {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 60px auto 120px;
+  }
+}
+
+.contact-content {
+  margin-right: 80px;
+}
+
+.contact-content__title {
+  margin-top: 27px;
+}
+
+@media screen and (min-width: 769px) {
+  .contact-content__title {
+    margin-top: 4vh;
+  }
+}
+
+.contact-content__text {
+  margin-top: 30px;
+  max-width: 440px;
+}
+
+@media screen and (min-width: 769px) {
+  .contact-content__text {
+    line-height: 2rem;
+  }
+}
+
+.contact-content__btn {
+  margin-top: 30px;
 }
