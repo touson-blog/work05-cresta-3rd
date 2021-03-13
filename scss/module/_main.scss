@@ -33,7 +33,7 @@
     &__img-sub {
         position: absolute;
         height: 100vh;
-        width: 75%;
+        width: 50%;
         top: 0;
         right: 0;
         z-index: 1;
@@ -41,20 +41,32 @@
     &__contents {
         position: absolute;
         top: 26vh;
-        right: 8vw;
-        width: 245px;
         z-index: 3;
         color: white;
+        &--top {
+            width: 245px;
+            right: 8vw;
+            @include mq(pc) {
+                right: 16vw;
+            }
+        }
     }
     &__title,
     &__company {
         font-size: 0.9rem;
+        @include mq(pc) {
+            font-size: (20rem /16);
+        }
         line-height: 1.3rem;
         font-weight: bold;
     }
     &__concept {
         font-size: 3.7rem;
         font-weight: 1000;
+        @include mq(pc) {
+            font-size: (72rem /16);
+            line-height: (86rem /16);
+        }
     }
 }
 
@@ -64,11 +76,11 @@
     top: 100px;
     max-width: 1100px;
     padding: 50px 15px;
-    @include mq(tb) {
+    @include mq(pc) {
         padding: 110px 50px;
     }
     margin: 80px auto 0;
-    @include mq(tb) {
+    @include mq(pc) {
         margin: 20px auto 0;
     }
     .content-about {
@@ -76,7 +88,7 @@
         padding: 50px 30px;
         max-width: 590px;
         margin: 0 auto;
-        @include mq(tb) {
+        @include mq(pc) {
             margin-left: 0;
         }
         &__txt {
@@ -99,24 +111,24 @@
 .page-cards {
     z-index: 5;
     padding: 40px 15px;
-    @include mq(tb) {
+    @include mq(pc) {
         padding: 175px 15px 60px;
     }
     display: flex;
     flex-wrap: wrap;
-    @include mq(tb) {
+    @include mq(pc) {
         justify-content: center;
     }
     width: 100%;
     &--col2 > &__item {
         width: 100%;
-        @include mq(tb) {
+        @include mq(pc) {
             width: 45%;
         }
     }
     &__item {
         max-width: 520px;
-        @include mq(tb) {
+        @include mq(pc) {
             margin-right: 60px;
             &:last-child {
                 margin-right: 0;
@@ -156,7 +168,7 @@
 
 .page-topics {
     padding: 37px 5vw 40px;
-    @include mq(tb) {
+    @include mq(pc) {
         padding: 57px 5vw 60px;
     }
 }
@@ -180,7 +192,7 @@
     border-bottom: 1px solid #dddddddd;
     font-weight: bold;
     &__date {
-        color: #CECECE;
+        color: #cecece;
     }
     &__title {
         padding: 8px 0;
@@ -188,7 +200,7 @@
 }
 
 .topics-btn {
-    @include mq(tb) {
+    @include mq(pc) {
         text-align: right;
     }
 }
@@ -203,10 +215,10 @@
 
 .contact-contents {
     margin-bottom: 40px;
-    @include mq(sp) {
+    @include mq(tb) {
         margin-bottom: 80px;
     }
-    @include mq(tb) {
+    @include mq(pc) {
         display: flex;
         flex-direction: row-reverse;
         margin: 60px auto 120px;
@@ -217,14 +229,14 @@
     margin-right: 80px;
     &__title {
         margin-top: 27px;
-        @include mq(tb) {
+        @include mq(pc) {
             margin-top: 4vh;
         }
     }
     &__text {
         margin-top: 30px;
         max-width: 440px;
-        @include mq(tb) {
+        @include mq(pc) {
             line-height: 2rem;
         }
     }

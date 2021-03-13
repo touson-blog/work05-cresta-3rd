@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>DIGSMILE inc. | contact</title>
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__inner">
+            <section class="logo">
+                <h1><a href="../index.html"><img class="logo__img" src="/images/site-logo@2x-min.png" alt=""></a></h1>
+            </section>
+            <!-- /.logo header_logo -->
+            <button class="burger-btn header__burger-btn">
+                <div class="burger-btn__bar">
+                    <span class="bar bar__top"></span>
+                    <span class="bar bar__mid"></span>
+                    <span class="bar bar__bot"></span>
+                </div>
+                <p class="menu burger-btn__menu">MENU</p>
+            </button>
+        </section>
+        <!-- /.header__inner -->
+        <nav class="header__burger">
+            <div class="burger-bg"></div>
+            <section class="burger-wrapper">
+                <section class="burger-menu">
+                    <div class="logo-mark">
+                        <h1><a href="../index.html"><img class="logo-mark__img" src="../images/site-logo-symbol@2x-min.png"
+                                    alt=""></a></h1>
+                    </div>
+                    <ul class="nav-lists">
+                        <li class="nav-item"><a href="/about/index.html">ABOUT US</a></li>
+                        <li class="nav-item"><a href="#">WORKS</a></li>
+                        <li class="nav-item"><a href="#">CULTURE</a></li>
+                        <li class="nav-item"><a href="#">TOPICS</a></li>
+                        <li class="nav-item"><a href="#">CONTACT</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </header>
+
+    <main class="main-contanct">
+        <section class="fv main-contanct__fv">
+            <p><img class="img fv__img-main" src="../images/photo-of-people-looking-on-tablet-1@2x-min.png" alt=""></p>
+            <p><img class="img fv__img-sub" src="../images/bg_kv@2x.png" alt=""></p>
+            <div class="contents fv__contents">
+                <h2 class="title contents__title">CONTACT</h2>
+                <p class="concept contents__concept">お問い合わせ</p>
+            </div>
+        </section>
+
+        <form class="form" action="contact.php" id="form" method="post">
+            <p class="form-text">ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。</p>
+            <div class="form__type">
+                <label class="form-title" for="type">お問い合わせ種別
+                    <span class="required">必須</span>
+                </label>
+                <ul class="type-items">
+                    <li class="type-item"><input type="radio" name="type" id="type" value="offer" checked>制作依頼</li>
+                    <li class="type-item"><input type="radio" name="type" id="recruit" value="recruit">採用</li>
+                    <li class="type-item"><input type="radio" name="type" id="ir" value="ir">IR</li>
+                    <li class="type-item"><input type="radio" name="type" id="other" value="other">その他</li>
+                </ul>
+            </div>
+            <div class="form__company">
+                <label class="form-title" for="company">会社名・団体名</label>
+                <input type="text" name="company">
+            </div>
+            <div class="form__name">
+                <label class="form-title" for="name">お名前
+                    <span class="required">必須</span>
+                </label>
+                <input type="text" name="name">
+            </div>
+            <div class="form__email">
+                <label class="form-title" for="email">メールアドレス
+                    <span class="required">必須</span>
+                </label>
+                <input type="text" name="email">
+            </div>
+            <div class="form__phone">
+                <label class="form-title" for="phone">電話番号</label>
+                <input type="text" name="phone">
+            </div>
+            <div class="form__message">
+                <label class="form-title" for="message">お問い合わせ内容
+                    <span class="required">必須</span>
+                </label>
+                <textarea name="message"></textarea>
+            </div>
+            <div class="form__privacy">
+                <label class="form-title" for="privacy">PRIVACY POLICY</label>
+                <textarea class="privacy-text" name="privacy" id="privacy" cols="30" rows="10" readonly>個人情報保護方針
+                    株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。
+                    1.個人情報の収集、利用
+                    当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。
+                    2.個人情報の第三者への開示と提供
+                    収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。
+                    業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。
+                    3.個人情報の保護
+                    当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。
+                    
+                    4.法令および関連規範の遵守
+                    当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。
+                    
+                    5.個人情報の開示・訂正・削除
+                    当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。
+                    
+                    法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。
+                    
+                    お問い合わせ窓口
+                    当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。
+                    株式会社ファイアープレイス
+                    044-589-4333
+                    
+                    </textarea>
+            </div>
+            <div class="form__consent">
+                <input class="form-consent" type="checkbox" name="consent" value="consent">個人情報の取り扱いについて同意のうえ送信します。
+            </div>
+            <div class="form__btn">
+                <button class="btn">送信</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__inner">
+            <small class="footer__copyright">
+                ©2018 DIGSMILE INC.
+            </small>
+            <!-- /.footer-copyright -->
+        </section>
+        <!-- /.footer-inner -->
+    </footer>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>

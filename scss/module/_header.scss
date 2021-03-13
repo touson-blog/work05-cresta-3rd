@@ -2,7 +2,7 @@
     position: fixed;
     padding: 19.8px 4vw 0;
     width: 100%;
-    z-index: 10;
+    z-index: 50;
     &__inner {
         color: white;
         display: flex;
@@ -91,6 +91,9 @@
     display: block;
     &__img {
         width: 189px;
+        @include mq(pc) {
+            width: 260px;
+        }
     }
 }
 
