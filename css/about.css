@@ -197,7 +197,9 @@ template { display: none; }
 
 .burger-bg { background-color: #222222; opacity: 0.5; z-index: 20; position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; }
 
-.burger-wrapper { max-width: 520px; width: 35vw; height: 100vh; position: absolute; top: 0; right: 0; z-index: 30; text-align: center; background-color: #222222; opacity: 0.8; color: white; }
+.burger-wrapper { max-width: 520px; width: 100%; height: 100vh; position: absolute; top: 0; right: 0; z-index: 30; text-align: center; background-color: #222222; opacity: 0.8; color: white; }
+
+@media screen and (min-width: 376px) { .burger-wrapper { width: 35vw; } }
 
 .burger-wrapper__img { width: 10px; }
 
@@ -211,11 +213,13 @@ template { display: none; }
 
 .bar { display: block; background-color: #fff; height: 2px; width: 22px; border-radius: 1px; margin-bottom: 5px; }
 
-.cross .bar__top { top: 0%; left: -100%; -webkit-transition: 1s; transition: 1s; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
+.cross .bar__top { margin-top: 6.5px; -webkit-transition: 0.1s; transition: 0.1s; -webkit-transform: rotate(45deg); transform: rotate(45deg); }
 
 .cross .bar__mid { display: none; }
 
-.cross .bar__bot { top: 50%; left: -100%; -webkit-transition: 1s; transition: 1s; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+.cross .bar__bot { margin-top: -6.5px; -webkit-transition: 0.1s; transition: 0.1s; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.fixed { position: fixed; }
 
 .logo { display: block; }
 
