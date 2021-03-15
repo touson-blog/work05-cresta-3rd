@@ -239,7 +239,7 @@ template { display: none; }
 
 .btn-right { margin-right: 0; }
 
-.fv { height: 100vh; position: relative; }
+.fv { height: 100vh; width: 100vw; position: relative; }
 
 .fv__img-main { position: absolute; height: 86.5%; width: 76.4%; top: 0; left: 0; z-index: 2; -o-object-fit: cover; object-fit: cover; }
 

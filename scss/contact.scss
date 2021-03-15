@@ -2,6 +2,7 @@
 
 .fv {
     height: 80vh;
+    width: 100vw;
     &__img-main {
         height: 60vh;
     }
@@ -51,8 +52,8 @@ label {
 
 .form {
     padding: 0 4vw 80px;
-    max-width: 768px;
     @include mq(pc) {
+        max-width: 768px;
         margin: 0 auto;
     }
     &__type {
